@@ -1,6 +1,6 @@
 # 🌍 Mundo dos Países | API Explorer
 
-[![Hospedagem](https://img.shields.io/badge/Live-Demo-blue)](LINK_DO_SEU_GITHUB_PAGES_AQUI)
+[![Hospedagem](https://img.shields.io/badge/Live-Demo-blue)](https://adry4nbr.github.io/Explorador-de-Paises/)
 
 Uma aplicação interativa de exploração geográfica que consome a **REST Countries API**. O projeto oferece uma experiência de usuário fluida para busca e filtragem de dados globais, com foco em performance e interface adaptável.
 
