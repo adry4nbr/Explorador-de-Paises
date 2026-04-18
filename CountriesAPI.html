@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-Projeto REST Countries</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Explorador de Países</h1>
+      <p>Consuma dados da REST Countries API</p>
+      <button
+        id="themeToggle"
+        style="
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 20px;
+          border: none;
+        "
+      >
+        🌙 Dark Mode
+      </button>
+    </header>
+
+    <main>
+      <section class="search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Digite o nome de um país..."
+        />
+
+        <!-- Select dos continentes -->
+        <select id="regionSelect">
+          <option value="">Filtrar por Região</option>
+          <option value="africa">África</option>
+          <option value="americas">Américas</option>
+          <option value="asia">Ásia</option>
+          <option value="europe">Europa</option>
+          <option value="oceania">Oceania</option>
+        </select>
+
+        <!-- Select dos idiomas -->
+        <select id="idiomaSelect">
+          <option value="">Filtrar por Idioma</option>
+          <option value="portuguese">Português</option>
+          <option value="english">Inglês</option>
+          <option value="spanish">Espanhol</option>
+          <option value="french">Francês</option>
+          <option value="arabic">Árabe</option>
+          <option value="chinese">Chinês</option>
+          <option value="german">Alemão</option>
+          <option value="japanese">Japonês</option>
+        </select>
+
+        <button id="searchBtn">Buscar</button>
+      </section>
+
+      <section id="countriesContainer" class="countries-container">
+        <!-- Aqui o JS vai inserir os cards dos países -->
+      </section>
+    </main>
+
+    <footer>
+      <p>Mini-projeto desenvolvido por Adryan</p>
+    </footer>
+
+    <!-- Modal aqui -->
+    <div id="countryModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
